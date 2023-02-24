@@ -1,0 +1,2 @@
+﻿dotnet-ef migrations add FirstMig --project D:\Projects\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence --startup-project D:\Projects\OnionArcExample\src\Presentation\OnionArcExample.WebAPI
+dotnet-ef database update --project D:\Projects\OnionArcExample\src\Infrastructure\OnionArcExample.Persistence --startup-project D:\Projects\OnionArcExample\src\Presentation\OnionArcExample.WebAPI
