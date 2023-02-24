@@ -9,7 +9,6 @@ namespace OnionArcExample.Infrastructure
     {
         public bool Send(string to, string message)
         {
-
             Console.WriteLine("mail sent");
             return true;
         }
