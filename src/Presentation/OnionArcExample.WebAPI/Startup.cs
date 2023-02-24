@@ -25,6 +25,7 @@ namespace OnionArcExample.WebAPI
 
         public IConfiguration Configuration { get; }
 
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddPersistenceServices(Configuration);
