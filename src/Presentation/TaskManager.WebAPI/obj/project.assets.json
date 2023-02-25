@@ -6076,23 +6076,23 @@
     },
     "TaskManager.Application/1.0.0": {
       "type": "project",
-      "path": "../../Core/OnionArcExample.Application/TaskManager.Application.csproj",
-      "msbuildProject": "../../Core/OnionArcExample.Application/TaskManager.Application.csproj"
+      "path": "../../Core/TaskManager.Application/TaskManager.Application.csproj",
+      "msbuildProject": "../../Core/TaskManager.Application/TaskManager.Application.csproj"
     },
     "TaskManager.Domain/1.0.0": {
       "type": "project",
-      "path": "../../Core/OnionArcExample.Domain/TaskManager.Domain.csproj",
-      "msbuildProject": "../../Core/OnionArcExample.Domain/TaskManager.Domain.csproj"
+      "path": "../../Core/TaskManager.Domain/TaskManager.Domain.csproj",
+      "msbuildProject": "../../Core/TaskManager.Domain/TaskManager.Domain.csproj"
     },
     "TaskManager.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../../Infrastructure/OnionArcExample.Infrastructure/TaskManager.Infrastructure.csproj",
-      "msbuildProject": "../../Infrastructure/OnionArcExample.Infrastructure/TaskManager.Infrastructure.csproj"
+      "path": "../../Infrastructure/TaskManager.Infrastructure/TaskManager.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/TaskManager.Infrastructure/TaskManager.Infrastructure.csproj"
     },
     "TaskManager.Persistence/1.0.0": {
       "type": "project",
-      "path": "../../Infrastructure/OnionArcExample.Persistence/TaskManager.Persistence.csproj",
-      "msbuildProject": "../../Infrastructure/OnionArcExample.Persistence/TaskManager.Persistence.csproj"
+      "path": "../../Infrastructure/TaskManager.Persistence/TaskManager.Persistence.csproj",
+      "msbuildProject": "../../Infrastructure/TaskManager.Persistence/TaskManager.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6138,11 +6138,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Infrastructure\\TaskManager.Infrastructure.csproj": {
-              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Infrastructure\\TaskManager.Infrastructure.csproj"
+            "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj"
             },
-            "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Persistence\\TaskManager.Persistence.csproj": {
-              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Persistence\\TaskManager.Persistence.csproj"
+            "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Persistence\\TaskManager.Persistence.csproj": {
+              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Persistence\\TaskManager.Persistence.csproj"
             }
           }
         }

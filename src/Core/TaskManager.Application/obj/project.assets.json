@@ -212,6 +212,16 @@
             "related": ".xml"
           }
         }
+      },
+      "TaskManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TaskManager.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskManager.Domain.dll": {}
+        }
       }
     }
   },
@@ -571,12 +581,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TaskManager.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TaskManager.Domain/TaskManager.Domain.csproj",
+      "msbuildProject": "../TaskManager.Domain/TaskManager.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
-      "Microsoft.EntityFrameworkCore >= 5.0.3"
+      "Microsoft.EntityFrameworkCore >= 5.0.3",
+      "TaskManager.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -612,8 +627,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj": {
-              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj"
+            "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\TaskManager.Domain\\TaskManager.Domain.csproj": {
+              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\TaskManager.Domain\\TaskManager.Domain.csproj"
             }
           }
         }
@@ -666,16 +681,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

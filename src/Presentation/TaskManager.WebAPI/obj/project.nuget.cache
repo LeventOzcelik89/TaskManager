@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "49JJLA80tFblniaOcR8BJnqcWkgrJMiVbA176IRw/6Fiqxy0EdapGo8r4WJxClyudBoOxBASx9CX7d90ulMnmw==",
+  "dgSpecHash": "Ii0A+cIiLz7FAG2iecXhNinz0TrUn9Mblu38yf+IvmHT/j8qTo9bgfGgIi2w74GACG7RxUXUgfJ8IuiCaeFm3w==",
   "success": true,
   "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Presentation\\TaskManager.WebAPI\\TaskManager.WebAPI.csproj",
   "expectedPackageFiles": [

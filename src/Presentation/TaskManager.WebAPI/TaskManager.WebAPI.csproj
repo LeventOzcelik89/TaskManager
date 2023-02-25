@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\OnionArcExample.Infrastructure\TaskManager.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\OnionArcExample.Persistence\TaskManager.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TaskManager.Infrastructure\TaskManager.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TaskManager.Persistence\TaskManager.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

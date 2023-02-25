@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\OnionArcExample.Application\TaskManager.Application.csproj" />
-    <ProjectReference Include="..\..\Core\OnionArcExample.Domain\TaskManager.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\TaskManager.Application\TaskManager.Application.csproj" />
+    <ProjectReference Include="..\..\Core\TaskManager.Domain\TaskManager.Domain.csproj" />
   </ItemGroup>
 
 </Project>

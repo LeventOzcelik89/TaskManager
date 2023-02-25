@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2a7JGkGAuzm5NFPWyCkuDGkk40V/rHgrXaOU0vx0yALxGRkGS/dVmyzmyBEJjLU7Xx0PUUkANvQeRNtcDpkOzQ==",
+  "dgSpecHash": "3Lu7z2hHPnF+Ab8AtWFHCnUAPLN+xDXxCfYq7KMKILs7r8BVlisrGwikiPslaNWP600CuGXGCYDmgzzDyPHnOA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Infrastructure\\TaskManager.Infrastructure.csproj",
   "expectedPackageFiles": [

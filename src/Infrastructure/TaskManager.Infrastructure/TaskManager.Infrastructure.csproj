@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\OnionArcExample.Application\TaskManager.Application.csproj" />
+    <ProjectReference Include="..\..\Core\TaskManager.Application\TaskManager.Application.csproj" />
   </ItemGroup>
 
 </Project>
