@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nDqn+GjdEJZV0L5iG6y6MGnZiD1EyoL6+FplH+wPr3PlHK1ggEQ9CNdS7DqKmdyyyDmDl9r01somG0rd7/KP/w==",
+  "dgSpecHash": "PPnRYbQTcVgDeFnc8i873PJAIrUOhkgf05/DwhxHWK6/2s7pIcQn3tx7zrnKK0gx61uDK6DtpkytOCKJBTUcVQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\OnionArcExample\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Projects\\_Diğer\\OnionArcExample\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
