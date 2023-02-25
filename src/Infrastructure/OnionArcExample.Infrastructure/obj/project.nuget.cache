@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qO0FzFHynwOgNYeP6i2ywWDXzJ5R305IgaQpaRENy2CnQVms4mMHYH5FmFLdlHee+yvr/Smuw1l+izph3xByJQ==",
+  "dgSpecHash": "eB9h6iY0kQFfap//4zmN5pekjoCUwHjsYW/DQ69tk9nGHQe0b8apqTnHUh+bYFW/X5nGthmZl4RzuSI6TDfaPg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\_Diğer\\OnionArcExample\\src\\Infrastructure\\OnionArcExample.Infrastructure\\OnionArcExample.Infrastructure.csproj",
+  "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Infrastructure\\OnionArcExample.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.3\\microsoft.entityframeworkcore.5.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.3\\microsoft.entityframeworkcore.abstractions.5.0.3.nupkg.sha512",

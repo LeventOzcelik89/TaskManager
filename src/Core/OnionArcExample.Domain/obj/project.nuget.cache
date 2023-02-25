@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PPnRYbQTcVgDeFnc8i873PJAIrUOhkgf05/DwhxHWK6/2s7pIcQn3tx7zrnKK0gx61uDK6DtpkytOCKJBTUcVQ==",
+  "dgSpecHash": "zyB8MCISmHXHDaaqGKIymrGt0jZJ+U+NwAvx1w6QP6FnuVJXlakZplFjkMACYYV4Ag2Vsk5cIpjfLREZ/2mftw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\_Diğer\\OnionArcExample\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
+  "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",

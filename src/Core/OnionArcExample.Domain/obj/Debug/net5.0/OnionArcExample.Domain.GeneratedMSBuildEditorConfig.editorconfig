@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnionArcExample.Domain
-build_property.ProjectDir = D:\Projects\_Diğer\OnionArcExample\src\Core\OnionArcExample.Domain\
+build_property.ProjectDir = D:\Projects\TaskManager\TaskManager\src\Core\OnionArcExample.Domain\
