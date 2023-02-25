@@ -213,14 +213,14 @@
           }
         }
       },
-      "OnionArcExample.Domain/1.0.0": {
+      "TaskManager.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/OnionArcExample.Domain.dll": {}
+          "bin/placeholder/TaskManager.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/OnionArcExample.Domain.dll": {}
+          "bin/placeholder/TaskManager.Domain.dll": {}
         }
       }
     }
@@ -582,16 +582,16 @@
         "version.txt"
       ]
     },
-    "OnionArcExample.Domain/1.0.0": {
+    "TaskManager.Domain/1.0.0": {
       "type": "project",
-      "path": "../OnionArcExample.Domain/OnionArcExample.Domain.csproj",
-      "msbuildProject": "../OnionArcExample.Domain/OnionArcExample.Domain.csproj"
+      "path": "../OnionArcExample.Domain/TaskManager.Domain.csproj",
+      "msbuildProject": "../OnionArcExample.Domain/TaskManager.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 5.0.3",
-      "OnionArcExample.Domain >= 1.0.0"
+      "TaskManager.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -601,9 +601,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Application\\OnionArcExample.Application.csproj",
-      "projectName": "OnionArcExample.Application",
-      "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Application\\OnionArcExample.Application.csproj",
+      "projectUniqueName": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Application\\TaskManager.Application.csproj",
+      "projectName": "TaskManager.Application",
+      "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Application\\TaskManager.Application.csproj",
       "packagesPath": "C:\\Users\\leven\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -627,8 +627,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj": {
-              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj"
+            "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\TaskManager.Domain.csproj": {
+              "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\TaskManager.Domain.csproj"
             }
           }
         }

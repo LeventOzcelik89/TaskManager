@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
-      "projectName": "OnionArcExample.Domain",
-      "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\OnionArcExample.Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\TaskManager.Domain.csproj",
+      "projectName": "TaskManager.Domain",
+      "projectPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\TaskManager.Domain.csproj",
       "packagesPath": "C:\\Users\\leven\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Core\\OnionArcExample.Domain\\obj\\",
       "projectStyle": "PackageReference",

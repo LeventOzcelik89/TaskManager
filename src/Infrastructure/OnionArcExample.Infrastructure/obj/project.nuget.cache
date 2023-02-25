@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eB9h6iY0kQFfap//4zmN5pekjoCUwHjsYW/DQ69tk9nGHQe0b8apqTnHUh+bYFW/X5nGthmZl4RzuSI6TDfaPg==",
+  "dgSpecHash": "3Dwjeo6Ejb3D8+HZZ4jlL2GXySIr38aAcGEAgvFKqox71r5XQCcCtVPtxhT6wMO3UmgGLjQZeMIF5SGBC30sqw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Infrastructure\\OnionArcExample.Infrastructure.csproj",
+  "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\OnionArcExample.Infrastructure\\TaskManager.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.3\\microsoft.entityframeworkcore.5.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.3\\microsoft.entityframeworkcore.abstractions.5.0.3.nupkg.sha512",
@@ -18,9 +18,9 @@
     "C:\\Users\\leven\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "C:\\Users\\leven\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\leven\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

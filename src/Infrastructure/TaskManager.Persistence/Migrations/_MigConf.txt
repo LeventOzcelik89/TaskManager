@@ -1,0 +1,2 @@
+﻿dotnet-ef migrations add FirstMig --project D:\Projects\TaskManager\src\Infrastructure\TaskManager.Persistence --startup-project D:\Projects\TaskManager\src\Presentation\TaskManager.WebAPI
+dotnet-ef database update --project D:\Projects\TaskManager\src\Infrastructure\TaskManager.Persistence --startup-project D:\Projects\TaskManager\src\Presentation\TaskManager.WebAPI
