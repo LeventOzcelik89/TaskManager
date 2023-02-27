@@ -23,8 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Application", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Domain", "src\Core\TaskManager.Domain\TaskManager.Domain.csproj", "{022ADDBC-A952-4816-B738-4299A6C70A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Worker", "TaskManager.Worker\TaskManager.Worker.csproj", "{E7C449A5-B038-4971-A697-F0CC6AC2353C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,10 +49,6 @@ Global
 		{022ADDBC-A952-4816-B738-4299A6C70A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{022ADDBC-A952-4816-B738-4299A6C70A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{022ADDBC-A952-4816-B738-4299A6C70A5C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,7 +62,6 @@ Global
 		{A42B8BD0-6EED-47C0-8013-F4DF68B5C159} = {1EFF9021-206F-45ED-8D8D-04DF88E764F3}
 		{47D64DDF-160E-4F86-9153-C7BEB66D93AC} = {C32602B2-A6E9-4617-81F3-C65364025CBB}
 		{022ADDBC-A952-4816-B738-4299A6C70A5C} = {C32602B2-A6E9-4617-81F3-C65364025CBB}
-		{E7C449A5-B038-4971-A697-F0CC6AC2353C} = {E991BE65-656C-4858-B5C0-C464F9406FA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB1535C8-C299-4C5A-B25A-8680F0A0F491}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RaqKBBEFU6j0S1z6rG2idW4ErTQim6AlZxHvJW6WS2w3JnnHQOgDZBsAg6VYqN+12zdWL7yTySc3LVYOLWJ/Rg==",
+  "dgSpecHash": "bc9m5M2IBZ3PoOV7sL2cSRKvEUbwNNJqnSocLXga7YVXOjkl5RuFRW7hgue3yh4T5vL5A6t4u15H98HyaCteoQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Persistence\\TaskManager.Persistence.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.3\\microsoft.entityframeworkcore.inmemory.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.3\\microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver.nettopologysuite\\7.0.3\\microsoft.entityframeworkcore.sqlserver.nettopologysuite.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.3\\microsoft.entityframeworkcore.tools.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
@@ -50,6 +51,7 @@
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\nettopologysuite.io.sqlserverbytes\\2.1.0\\nettopologysuite.io.sqlserverbytes.2.1.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

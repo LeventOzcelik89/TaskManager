@@ -133,25 +133,13 @@ namespace TaskManager.Persistence.Migrations
                 {
                     b.HasBaseType("TaskManager.Domain.Common.BaseEntity");
 
-                    b.Property<string>("Code2")
-                        .HasColumnType("varchar(2)");
-
-                    b.Property<string>("Code3")
-                        .HasColumnType("varchar(3)");
-
                     b.Property<string>("Name")
                         .HasColumnType("varchar(100)");
-
-                    b.Property<string>("PhoneCode")
-                        .HasColumnType("varchar(10)");
 
                     b.ToTable("BaseEntity", t =>
                         {
                             t.Property("Name")
                                 .HasColumnName("UT_Country_Name");
-
-                            t.Property("PhoneCode")
-                                .HasColumnName("UT_Country_PhoneCode");
                         });
 
                     b.HasDiscriminator().HasValue("UT_Country");

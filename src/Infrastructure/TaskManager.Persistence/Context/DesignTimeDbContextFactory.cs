@@ -18,7 +18,7 @@ namespace TaskManager.Persistence.Context
                 .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../TaskManager.WebAPI"))
                 .AddJsonFile("appsettings.json")
                 .Build();
-            builder.UseSqlServer(configuration.GetConnectionString("SQLConnection"));
+            builder.UseSqlServer(configuration.GetConnectionString("SQLConnection"), sqlopts => sqlopts.UseNetTopologySuite());
             return CreateNewInstance(builder.Options);
         }
     }

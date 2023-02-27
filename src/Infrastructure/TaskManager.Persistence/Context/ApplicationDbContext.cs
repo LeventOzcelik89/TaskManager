@@ -26,6 +26,8 @@ namespace TaskManager.Persistence.Context
                     .ValueGeneratedOnAdd();
             });
 
+
+
             //  modelBuilder.Entity<SH_User>()
             //      .HasOptional<Standard>(s => s.Standard)
             //      .WithMany()

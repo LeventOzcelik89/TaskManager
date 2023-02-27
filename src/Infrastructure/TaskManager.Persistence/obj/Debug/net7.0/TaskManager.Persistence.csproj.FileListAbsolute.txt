@@ -17,3 +17,4 @@ D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\o
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.pdb
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.genruntimeconfig.cache
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\ref\TaskManager.Persistence.dll
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs

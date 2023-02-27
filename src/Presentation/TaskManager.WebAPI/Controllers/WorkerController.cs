@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using NetTopologySuite.IO;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using TaskManager.Application.Interfaces.Repositories;
 using TaskManager.Domain.Entities;
 
@@ -18,9 +20,9 @@ namespace TaskManager.WebAPI.Controllers
             _countryRepository = countryRepository;
         }
 
-        public IActionResult InsertCountry()
+        [HttpGet]
+        public async Task<IActionResult> InsertCountry()
         {
-
             var dir0 = @"D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\SourceFiles\Locations\gadm36_TUR_0.json";
             var location = System.IO.File.ReadAllText(dir0);
 
@@ -37,12 +39,16 @@ namespace TaskManager.WebAPI.Controllers
                 var item = new UT_Country
                 {
                     Name = feature.Attributes["NAME_0"].ToString(),
-                    Shape = feature.Geometry
+                    //  Shape = feature.Geometry
                 };
+
+                _countryRepository.AddAsync(item);
 
             }
 
-            return View();
+            return Ok("done");
         }
+
+
     }
 }

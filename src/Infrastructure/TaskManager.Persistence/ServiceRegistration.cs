@@ -18,8 +18,10 @@ namespace TaskManager.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection serviceCollection, IConfiguration configuration = null)
         {
-            serviceCollection.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(configuration?.GetConnectionString("SQLConnection")));
+
+            serviceCollection.AddDbContext<ApplicationDbContext>(options => 
+                options.UseSqlServer(configuration?.GetConnectionString("SQLConnection"), sqlOption => sqlOption.UseNetTopologySuite()
+            ));
 
             serviceCollection.AddTransient<IProductRepository, ProductRepository>();
             serviceCollection.AddTransient<ICountryRepository, CountryRepository>();

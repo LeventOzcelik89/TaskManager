@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0QOYk1TBHhgpJM9ZnQBFfz25KIE9lg2lxnGxRIwGLLrEPaEfFDlUmEUGW83zoUc7CClVRpHkz9icN0PY3k4sxw==",
+  "dgSpecHash": "s73pxaUU0zK39DRhFmeFRsPmtT7nKhgDGw3wkswYEE72IFsKQIjRRaRVTNxV+brRKm5AkxcYaZ8hP0badM0XrA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Presentation\\TaskManager.WebAPI\\TaskManager.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.3\\microsoft.entityframeworkcore.inmemory.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.3\\microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver.nettopologysuite\\7.0.3\\microsoft.entityframeworkcore.sqlserver.nettopologysuite.7.0.3.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
@@ -55,6 +56,7 @@
     "C:\\Users\\leven\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\nettopologysuite.features\\2.0.0\\nettopologysuite.features.2.0.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\nettopologysuite.io.geojson\\3.0.0\\nettopologysuite.io.geojson.3.0.0.nupkg.sha512",
+    "C:\\Users\\leven\\.nuget\\packages\\nettopologysuite.io.sqlserverbytes\\2.1.0\\nettopologysuite.io.sqlserverbytes.2.1.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\leven\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",

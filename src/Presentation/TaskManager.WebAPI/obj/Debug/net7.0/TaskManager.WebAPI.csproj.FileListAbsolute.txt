@@ -88,3 +88,5 @@ D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debu
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\NetTopologySuite.Features.dll
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\NetTopologySuite.IO.GeoJSON.dll
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\NetTopologySuite.IO.SqlServerBytes.dll
