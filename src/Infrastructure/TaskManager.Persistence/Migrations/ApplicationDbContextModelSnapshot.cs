@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TaskManager.Persistence.Context;
 
+#nullable disable
+
 namespace TaskManager.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
@@ -15,11 +17,12 @@ namespace TaskManager.Persistence.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.3")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "7.0.3")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            modelBuilder.Entity("TaskManager.Domain.Entities.Product", b =>
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("TaskManager.Domain.Common.BaseEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,6 +33,23 @@ namespace TaskManager.Persistence.Migrations
 
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BaseEntity");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("BaseEntity");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("TaskManager.Domain.Entities.Product", b =>
+                {
+                    b.HasBaseType("TaskManager.Domain.Common.BaseEntity");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -43,16 +63,12 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Products");
+                    b.HasDiscriminator().HasValue("Product");
                 });
 
             modelBuilder.Entity("TaskManager.Domain.Entities.SH_User", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.HasBaseType("TaskManager.Domain.Common.BaseEntity");
 
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
@@ -62,12 +78,6 @@ namespace TaskManager.Persistence.Migrations
 
                     b.Property<Guid>("CityId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CreatedId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .HasColumnType("varchar(250)");
@@ -90,26 +100,16 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<Guid>("TownId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("Id");
-
                     b.HasIndex("CityId");
 
                     b.HasIndex("TownId");
 
-                    b.ToTable("SH_User");
+                    b.HasDiscriminator().HasValue("SH_User");
                 });
 
             modelBuilder.Entity("TaskManager.Domain.Entities.UT_City", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CreatedId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
+                    b.HasBaseType("TaskManager.Domain.Common.BaseEntity");
 
                     b.Property<string>("Name")
                         .HasColumnType("varchar(100)");
@@ -120,16 +120,18 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<string>("PlateNumber")
                         .HasColumnType("varchar(2)");
 
-                    b.HasKey("Id");
+                    b.ToTable("BaseEntity", t =>
+                        {
+                            t.Property("Name")
+                                .HasColumnName("UT_City_Name");
+                        });
 
-                    b.ToTable("UT_City");
+                    b.HasDiscriminator().HasValue("UT_City");
                 });
 
             modelBuilder.Entity("TaskManager.Domain.Entities.UT_Country", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.HasBaseType("TaskManager.Domain.Common.BaseEntity");
 
                     b.Property<string>("Code2")
                         .HasColumnType("varchar(2)");
@@ -137,46 +139,46 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<string>("Code3")
                         .HasColumnType("varchar(3)");
 
-                    b.Property<Guid?>("CreatedId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Name")
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("PhoneCode")
                         .HasColumnType("varchar(10)");
 
-                    b.HasKey("Id");
+                    b.ToTable("BaseEntity", t =>
+                        {
+                            t.Property("Name")
+                                .HasColumnName("UT_Country_Name");
 
-                    b.ToTable("UT_Country");
+                            t.Property("PhoneCode")
+                                .HasColumnName("UT_Country_PhoneCode");
+                        });
+
+                    b.HasDiscriminator().HasValue("UT_Country");
                 });
 
             modelBuilder.Entity("TaskManager.Domain.Entities.UT_Town", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.HasBaseType("TaskManager.Domain.Common.BaseEntity");
 
                     b.Property<Guid?>("CityId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("CreatedId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Name")
                         .HasColumnType("varchar(100)");
 
-                    b.HasKey("Id");
-
                     b.HasIndex("CityId");
 
-                    b.ToTable("UT_Town");
+                    b.ToTable("BaseEntity", t =>
+                        {
+                            t.Property("CityId")
+                                .HasColumnName("UT_Town_CityId");
+
+                            t.Property("Name")
+                                .HasColumnName("UT_Town_Name");
+                        });
+
+                    b.HasDiscriminator().HasValue("UT_Town");
                 });
 
             modelBuilder.Entity("TaskManager.Domain.Entities.SH_User", b =>

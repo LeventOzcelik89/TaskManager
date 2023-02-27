@@ -13,15 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{E991BE65-656C-4858-B5C0-C464F9406FA7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sourcefiles", "sourcefiles", "{6994811C-2096-4D31-A603-11F489F54DF0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{A91A6E65-5DF4-405A-A789-4456BF5DE3CB}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Users\OZCELIK\Desktop\UT_City.json = C:\Users\OZCELIK\Desktop\UT_City.json
-		C:\Users\OZCELIK\Desktop\UT_Country.json = C:\Users\OZCELIK\Desktop\UT_Country.json
-		C:\Users\OZCELIK\Desktop\UT_Town.json = C:\Users\OZCELIK\Desktop\UT_Town.json
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.WebAPI", "src\Presentation\TaskManager.WebAPI\TaskManager.WebAPI.csproj", "{4764D36B-28C5-4FBE-AA74-9603680B8D71}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Infrastructure", "src\Infrastructure\TaskManager.Infrastructure\TaskManager.Infrastructure.csproj", "{81167D4D-C87A-4FD3-B135-50D0372A754A}"
@@ -31,6 +22,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Application", "src\Core\TaskManager.Application\TaskManager.Application.csproj", "{47D64DDF-160E-4F86-9153-C7BEB66D93AC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Domain", "src\Core\TaskManager.Domain\TaskManager.Domain.csproj", "{022ADDBC-A952-4816-B738-4299A6C70A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Worker", "TaskManager.Worker\TaskManager.Worker.csproj", "{E7C449A5-B038-4971-A697-F0CC6AC2353C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +51,10 @@ Global
 		{022ADDBC-A952-4816-B738-4299A6C70A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{022ADDBC-A952-4816-B738-4299A6C70A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{022ADDBC-A952-4816-B738-4299A6C70A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C449A5-B038-4971-A697-F0CC6AC2353C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,12 +63,12 @@ Global
 		{C32602B2-A6E9-4617-81F3-C65364025CBB} = {E4893060-FC2F-40FE-9ADC-61F517085DC7}
 		{1EFF9021-206F-45ED-8D8D-04DF88E764F3} = {E4893060-FC2F-40FE-9ADC-61F517085DC7}
 		{B0BDCBD4-BA35-4E47-AB74-BD40A498ABD0} = {E4893060-FC2F-40FE-9ADC-61F517085DC7}
-		{A91A6E65-5DF4-405A-A789-4456BF5DE3CB} = {6994811C-2096-4D31-A603-11F489F54DF0}
 		{4764D36B-28C5-4FBE-AA74-9603680B8D71} = {B0BDCBD4-BA35-4E47-AB74-BD40A498ABD0}
 		{81167D4D-C87A-4FD3-B135-50D0372A754A} = {1EFF9021-206F-45ED-8D8D-04DF88E764F3}
 		{A42B8BD0-6EED-47C0-8013-F4DF68B5C159} = {1EFF9021-206F-45ED-8D8D-04DF88E764F3}
 		{47D64DDF-160E-4F86-9153-C7BEB66D93AC} = {C32602B2-A6E9-4617-81F3-C65364025CBB}
 		{022ADDBC-A952-4816-B738-4299A6C70A5C} = {C32602B2-A6E9-4617-81F3-C65364025CBB}
+		{E7C449A5-B038-4971-A697-F0CC6AC2353C} = {E991BE65-656C-4858-B5C0-C464F9406FA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB1535C8-C299-4C5A-B25A-8680F0A0F491}
