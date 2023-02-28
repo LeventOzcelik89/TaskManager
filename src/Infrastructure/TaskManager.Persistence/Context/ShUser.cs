@@ -5,7 +5,7 @@ namespace TaskManager.Persistence.Context;
 
 public partial class ShUser
 {
-    public Guid? Id { get; set; }
+    public Guid Id { get; set; }
 
     public DateTime? Created { get; set; }
 
@@ -34,4 +34,8 @@ public partial class ShUser
     public Guid CityId { get; set; }
 
     public bool? IsBlocked { get; set; }
+
+    public virtual UtTown City { get; set; }
+
+    public virtual UtTown Town { get; set; }
 }

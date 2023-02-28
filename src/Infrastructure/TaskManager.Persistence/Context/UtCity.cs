@@ -6,7 +6,7 @@ namespace TaskManager.Persistence.Context;
 
 public partial class UtCity
 {
-    public Guid? Id { get; set; }
+    public Guid Id { get; set; }
 
     public DateTime? Created { get; set; }
 

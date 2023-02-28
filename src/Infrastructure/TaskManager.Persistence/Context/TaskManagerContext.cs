@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace TaskManager.Persistence.Context;
 
@@ -25,18 +24,16 @@ public partial class TaskManagerContext : DbContext
     public virtual DbSet<UtTown> UtTowns { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer("Server=.;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True", sqlOption => sqlOption.UseNetTopologySuite());
-    }
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=.;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True", x => x.UseNetTopologySuite());
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ShUser>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("SH_User");
+            entity.ToTable("SH_User");
 
+            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.BirthDate).HasColumnType("datetime");
             entity.Property(e => e.CellPhone)
                 .IsRequired()
@@ -51,7 +48,6 @@ public partial class TaskManagerContext : DbContext
             entity.Property(e => e.FirstName)
                 .IsRequired()
                 .HasMaxLength(100);
-            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.IdentityNumber)
                 .IsRequired()
                 .HasMaxLength(11);
@@ -61,19 +57,27 @@ public partial class TaskManagerContext : DbContext
             entity.Property(e => e.Password)
                 .IsRequired()
                 .HasMaxLength(250);
+
+            entity.HasOne(d => d.City).WithMany(p => p.ShUserCities)
+                .HasForeignKey(d => d.CityId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK___SH_User_CityId___UT_City_Id");
+
+            entity.HasOne(d => d.Town).WithMany(p => p.ShUserTowns)
+                .HasForeignKey(d => d.TownId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK___SH_User_TownId___UT_Town_Id");
         });
 
         modelBuilder.Entity<UtCity>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("UT_City");
+            entity.ToTable("UT_City");
 
+            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Changed).HasColumnType("datetime");
             entity.Property(e => e.Created)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
-            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.PlateNumber)
                 .IsRequired()
@@ -83,32 +87,33 @@ public partial class TaskManagerContext : DbContext
 
         modelBuilder.Entity<UtCountry>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("UT_Country");
+            entity.ToTable("UT_Country");
 
+            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Changed).HasColumnType("datetime");
             entity.Property(e => e.Created)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
-            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Shape).HasColumnType("geometry");
         });
 
         modelBuilder.Entity<UtTown>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("UT_Town");
+            entity.ToTable("UT_Town");
 
+            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Changed).HasColumnType("datetime");
             entity.Property(e => e.Created)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
-            entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Shape).HasColumnType("geometry");
+
+            entity.HasOne(d => d.City).WithMany(p => p.InverseCity)
+                .HasForeignKey(d => d.CityId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK___UT_Town_CityId___UT_City_Id");
         });
 
         OnModelCreatingPartial(modelBuilder);
