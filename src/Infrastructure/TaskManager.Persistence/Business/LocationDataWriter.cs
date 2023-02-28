@@ -1,35 +1,35 @@
-﻿using Microsoft.AspNetCore.Http.Features;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.EntityFrameworkCore;
 using NetTopologySuite.IO;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using TaskManager.Application.Interfaces.Repositories;
-//using TaskManager.Domain.Entities;
 using TaskManager.Persistence.Context;
 
-namespace TaskManager.WebAPI.Controllers
+namespace TaskManager.Persistence.Business
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class WorkerController : Controller
+
+
+    public class LocationDataWriter
     {
-
         readonly TaskManagerContext _context;
-        public WorkerController(TaskManagerContext context) => _context = context;
+        public LocationDataWriter(TaskManagerContext context)
+        {
+            _context = context;
+        }
 
-        [HttpGet]
-        public async Task<IActionResult> InsertCountry()
+        public async Task<bool> InsertUT_Location()
         {
 
-            var dir0 = @"D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\SourceFiles\Locations\gadm36_TUR_0.json";
-            var location = System.IO.File.ReadAllText(dir0);
+            var dir = @"D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\SourceFiles\Locations\gadm36_TUR_0.json";
+            var location = System.IO.File.ReadAllText(dir);
 
             var jsonReader = new GeoJsonReader();
             var features = jsonReader.Read<NetTopologySuite.Features.FeatureCollection>(location);
             if (features == null)
             {
-                return null;
+                return false;
             }
 
             foreach (var feature in features)
@@ -47,8 +47,10 @@ namespace TaskManager.WebAPI.Controllers
 
             _context.SaveChanges();
 
-            return Ok("done");
+            return true;
+
         }
+
 
 
     }

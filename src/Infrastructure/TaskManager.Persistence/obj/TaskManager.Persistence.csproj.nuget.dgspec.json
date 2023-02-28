@@ -243,6 +243,10 @@
             "NetTopologySuite": {
               "target": "Package",
               "version": "[2.5.0, )"
+            },
+            "NetTopologySuite.IO.GeoJSON": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

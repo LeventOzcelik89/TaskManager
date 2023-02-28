@@ -1966,6 +1966,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "NetTopologySuite": "2.5.0",
+          "NetTopologySuite.IO.GeoJSON": "3.0.0",
           "TaskManager.Application": "1.0.0",
           "TaskManager.Domain": "1.0.0"
         },

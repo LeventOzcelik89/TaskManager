@@ -10,4 +10,9 @@ namespace TaskManager.Application.Wrappers
         public bool Success { get; set; }
         public string Message { get; set; }
     }
+
+    public class BaseResponse<T> {
+        public Guid MyProperty { get; set; }
+    }
+
 }
