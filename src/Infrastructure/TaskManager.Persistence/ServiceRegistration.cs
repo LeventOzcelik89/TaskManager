@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 //using TaskManager.Persistence.Context;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using TaskManager.Persistence.Context;
 
 namespace TaskManager.Persistence
 {

@@ -30,9 +30,4 @@
     <ProjectReference Include="..\..\Core\TaskManager.Domain\TaskManager.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DBTables\" />
-    <Folder Include="DefaultDatas\" />
-  </ItemGroup>
-
 </Project>
