@@ -1,10 +1,3 @@
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.csproj.AssemblyReference.cache
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.AssemblyInfoInputs.cache
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.AssemblyInfo.cs
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.csproj.CoreCompileInputs.cache
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.MvcApplicationPartsAssemblyInfo.cache
-D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\appsettings.Development.json
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\appsettings.json
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\TaskManager.WebAPI.exe
@@ -76,6 +69,13 @@ D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debu
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\TaskManager.Persistence.pdb
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\TaskManager.Application.pdb
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\TaskManager.Domain.pdb
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.csproj.AssemblyReference.cache
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.AssemblyInfoInputs.cache
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.AssemblyInfo.cs
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.csproj.CoreCompileInputs.cache
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\staticwebassets\msbuild.TaskManager.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.TaskManager.WebAPI.props
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TaskManager.WebAPI.props

@@ -1,9 +1,3 @@
-D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.csproj.AssemblyReference.cache
-D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.AssemblyInfoInputs.cache
-D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.AssemblyInfo.cs
-D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.csproj.CoreCompileInputs.cache
-D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\bin\Debug\net7.0\TaskManager.Persistence.deps.json
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\bin\Debug\net7.0\TaskManager.Persistence.runtimeconfig.json
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\bin\Debug\net7.0\TaskManager.Persistence.dll
@@ -12,6 +6,12 @@ D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\b
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\bin\Debug\net7.0\TaskManager.Domain.dll
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\bin\Debug\net7.0\TaskManager.Application.pdb
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\bin\Debug\net7.0\TaskManager.Domain.pdb
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.csproj.AssemblyReference.cache
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.AssemblyInfoInputs.cache
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.AssemblyInfo.cs
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.csproj.CoreCompileInputs.cache
+D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.csproj.CopyComplete
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\TaskManager.Persistence.dll
 D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence\obj\Debug\net7.0\refint\TaskManager.Persistence.dll
