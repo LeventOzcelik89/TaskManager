@@ -408,3 +408,4 @@ FodyWeavers.xsd
 /src/Core/TaskManager.Application/obj/Debug/net7.0/TaskManager.Application.dll
 /src/Core/TaskManager.Application/obj/Debug/net7.0/TaskManager.Application.csproj.CoreCompileInputs.cache
 /src/Core/TaskManager.Application/obj/Debug/net7.0/refint/TaskManager.Application.dll
+/src/Core/TaskManager.Application/bin/Debug/net7.0/TaskManager.Application.deps.json
