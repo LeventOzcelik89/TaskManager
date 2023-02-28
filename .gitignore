@@ -396,3 +396,15 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.vs/ProjectEvaluation/taskmanager.projects.v6.1
+/.vs/ProjectEvaluation/taskmanager.metadata.v6.1
+/.vs/TaskManager/DesignTimeBuild/.dtbcache.v2
+/.vs/TaskManager/v17/.suo
+/.vs/TaskManager/v17/.futdcache.v2
+/src/Core/TaskManager.Application/bin/Debug/net7.0/TaskManager.Application.pdb
+/src/Core/TaskManager.Application/bin/Debug/net7.0/TaskManager.Application.dll
+/src/Core/TaskManager.Application/obj/Debug/net7.0/ref/TaskManager.Application.dll
+/src/Core/TaskManager.Application/obj/Debug/net7.0/TaskManager.Application.pdb
+/src/Core/TaskManager.Application/obj/Debug/net7.0/TaskManager.Application.dll
+/src/Core/TaskManager.Application/obj/Debug/net7.0/TaskManager.Application.csproj.CoreCompileInputs.cache
+/src/Core/TaskManager.Application/obj/Debug/net7.0/refint/TaskManager.Application.dll

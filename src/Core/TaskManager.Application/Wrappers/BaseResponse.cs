@@ -11,8 +11,9 @@ namespace TaskManager.Application.Wrappers
         public string Message { get; set; }
     }
 
-    public class BaseResponse<T> {
-        public Guid MyProperty { get; set; }
+    public class BaseResponse<T> : BaseResponse
+    {
+        public T Object { get; set; }
     }
 
 }
