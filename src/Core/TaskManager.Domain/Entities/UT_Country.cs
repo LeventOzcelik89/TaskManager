@@ -9,7 +9,7 @@ namespace TaskManager.Domain.Entities
         [Column(TypeName = "varchar(100)")]
         public string Name { get; set; }
 
-        //[Column(TypeName = "varchar(10)")]
-        //public Geometry Shape { get; set; }
+        [Column(TypeName = "geometry")]
+        public Geometry Shape { get; set; }
     }
 }

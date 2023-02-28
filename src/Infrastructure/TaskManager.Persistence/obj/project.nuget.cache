@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bc9m5M2IBZ3PoOV7sL2cSRKvEUbwNNJqnSocLXga7YVXOjkl5RuFRW7hgue3yh4T5vL5A6t4u15H98HyaCteoQ==",
+  "dgSpecHash": "r92Q2PZHJ1CFcNRkTMySFjgshYkZsuExPxA+6QTuk5GoZm06JJmZNgABF1iRHjvTu4LNb5WgvLSiMO9FOMF8Vw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\TaskManager\\TaskManager\\src\\Infrastructure\\TaskManager.Persistence\\TaskManager.Persistence.csproj",
   "expectedPackageFiles": [

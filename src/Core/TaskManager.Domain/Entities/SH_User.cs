@@ -33,7 +33,7 @@ namespace TaskManager.Domain.Entities
         public virtual UT_Town Town { get; set; }
 
         [ForeignKey("UT_City")]
-        public Guid CityId { get; set; }
+        public virtual Guid CityId { get; set; }
         public virtual UT_City City { get; set; }
 
 

@@ -1072,7 +1072,9 @@
       "TaskManager.Persistence/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.3",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": "7.0.3",
           "Microsoft.Extensions.Configuration": "7.0.0",

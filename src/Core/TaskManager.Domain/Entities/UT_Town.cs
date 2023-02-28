@@ -16,5 +16,6 @@ namespace TaskManager.Domain.Entities
         [ForeignKey("UT_City")]
         public Guid? CityId { get; set; }
         public virtual UT_City City { get; set; }
+        public virtual SH_User User { get; set; }
     }
 }

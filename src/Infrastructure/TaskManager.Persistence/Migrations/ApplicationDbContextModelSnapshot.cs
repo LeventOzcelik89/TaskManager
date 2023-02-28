@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using NetTopologySuite.Geometries;
 using TaskManager.Persistence.Context;
 
 #nullable disable
@@ -100,9 +101,13 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<Guid>("TownId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasIndex("CityId");
+                    b.HasIndex("CityId")
+                        .IsUnique()
+                        .HasFilter("[CityId] IS NOT NULL");
 
-                    b.HasIndex("TownId");
+                    b.HasIndex("TownId")
+                        .IsUnique()
+                        .HasFilter("[TownId] IS NOT NULL");
 
                     b.HasDiscriminator().HasValue("SH_User");
                 });
@@ -136,6 +141,9 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("varchar(100)");
 
+                    b.Property<Geometry>("Shape")
+                        .HasColumnType("geometry");
+
                     b.ToTable("BaseEntity", t =>
                         {
                             t.Property("Name")
@@ -155,7 +163,9 @@ namespace TaskManager.Persistence.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("varchar(100)");
 
-                    b.HasIndex("CityId");
+                    b.HasIndex("CityId")
+                        .IsUnique()
+                        .HasFilter("[CityId] IS NOT NULL");
 
                     b.ToTable("BaseEntity", t =>
                         {
@@ -172,15 +182,15 @@ namespace TaskManager.Persistence.Migrations
             modelBuilder.Entity("TaskManager.Domain.Entities.SH_User", b =>
                 {
                     b.HasOne("TaskManager.Domain.Entities.UT_City", "City")
-                        .WithMany()
-                        .HasForeignKey("CityId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithOne("User")
+                        .HasForeignKey("TaskManager.Domain.Entities.SH_User", "CityId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("TaskManager.Domain.Entities.UT_Town", "Town")
-                        .WithMany()
-                        .HasForeignKey("TownId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithOne("User")
+                        .HasForeignKey("TaskManager.Domain.Entities.SH_User", "TownId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("City");
@@ -191,10 +201,23 @@ namespace TaskManager.Persistence.Migrations
             modelBuilder.Entity("TaskManager.Domain.Entities.UT_Town", b =>
                 {
                     b.HasOne("TaskManager.Domain.Entities.UT_City", "City")
-                        .WithMany()
-                        .HasForeignKey("CityId");
+                        .WithOne("Town")
+                        .HasForeignKey("TaskManager.Domain.Entities.UT_Town", "CityId")
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("City");
+                });
+
+            modelBuilder.Entity("TaskManager.Domain.Entities.UT_City", b =>
+                {
+                    b.Navigation("Town");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TaskManager.Domain.Entities.UT_Town", b =>
+                {
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

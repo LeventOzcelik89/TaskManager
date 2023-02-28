@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using NetTopologySuite.Geometries;
 
 #nullable disable
 
@@ -37,6 +38,7 @@ namespace TaskManager.Persistence.Migrations
                     PlateNumber = table.Column<string>(type: "varchar(2)", nullable: true),
                     PhoneCode = table.Column<string>(type: "varchar(10)", nullable: true),
                     UT_Country_Name = table.Column<string>(type: "varchar(100)", nullable: true),
+                    Shape = table.Column<Geometry>(type: "geometry", nullable: true),
                     UT_Town_Name = table.Column<string>(type: "varchar(100)", nullable: true),
                     UT_Town_CityId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
@@ -47,14 +49,12 @@ namespace TaskManager.Persistence.Migrations
                         name: "FK_BaseEntity_BaseEntity_CityId",
                         column: x => x.CityId,
                         principalTable: "BaseEntity",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_BaseEntity_BaseEntity_TownId",
                         column: x => x.TownId,
                         principalTable: "BaseEntity",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_BaseEntity_BaseEntity_UT_Town_CityId",
                         column: x => x.UT_Town_CityId,
@@ -65,17 +65,23 @@ namespace TaskManager.Persistence.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_BaseEntity_CityId",
                 table: "BaseEntity",
-                column: "CityId");
+                column: "CityId",
+                unique: true,
+                filter: "[CityId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BaseEntity_TownId",
                 table: "BaseEntity",
-                column: "TownId");
+                column: "TownId",
+                unique: true,
+                filter: "[TownId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BaseEntity_UT_Town_CityId",
                 table: "BaseEntity",
-                column: "UT_Town_CityId");
+                column: "UT_Town_CityId",
+                unique: true,
+                filter: "[CityId] IS NOT NULL");
         }
 
         /// <inheritdoc />

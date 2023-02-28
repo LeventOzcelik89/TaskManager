@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
+using System;
 using System.Xml;
 using TaskManager.Application.Interfaces.Context;
 using TaskManager.Domain.Common;
@@ -26,7 +27,11 @@ namespace TaskManager.Persistence.Context
                     .ValueGeneratedOnAdd();
             });
 
+            modelBuilder.Entity<SH_User>().HasOne<UT_City>(e => e.City).WithOne(e => e.User).OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<SH_User>().HasOne<UT_Town>(e => e.Town).WithOne(e => e.User).OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<UT_Town>().HasOne<UT_City>(e => e.City).WithOne(e => e.Town).OnDelete(DeleteBehavior.NoAction);
 
+            //  modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             //  modelBuilder.Entity<SH_User>()
             //      .HasOptional<Standard>(s => s.Standard)
