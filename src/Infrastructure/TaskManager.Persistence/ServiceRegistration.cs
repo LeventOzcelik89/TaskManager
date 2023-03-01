@@ -34,9 +34,6 @@ namespace TaskManager.Persistence
                 a.UseSqlServer(configuration?.GetConnectionString("SQLConnection"), sqlOption => sqlOption.UseNetTopologySuite());
             });
 
-
-
-
             //serviceCollection.AddDbContext<TaskManagerContext>(_ => _.UseSqlServer("Server=.;Database=Northwind;Trusted_Connection=True;"));
 
 

@@ -7,7 +7,7 @@ using TaskManager.Persistence.Context;
 namespace TaskManager.WebAPI.Controllers
 {
     [Route("api/[controller]")]
-    
+
     public class WorkerController : ControllerBase
     {
 

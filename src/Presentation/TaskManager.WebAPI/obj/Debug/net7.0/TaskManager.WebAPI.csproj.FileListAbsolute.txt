@@ -90,3 +90,7 @@ D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debu
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.pdb
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\TaskManager.WebAPI.genruntimeconfig.cache
 D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\obj\Debug\net7.0\ref\TaskManager.WebAPI.dll
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\NetTopologySuite.IO.GeoJSON4STJ.dll
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Projects\TaskManager\TaskManager\src\Presentation\TaskManager.WebAPI\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
