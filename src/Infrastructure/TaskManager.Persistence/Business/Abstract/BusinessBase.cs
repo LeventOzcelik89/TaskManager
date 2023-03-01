@@ -14,7 +14,7 @@ namespace TaskManager.Persistence.Business.Abstract
     public abstract class BusinessBase<T>
     {
         [JsonIgnore]
-        public TaskManagerContext _context { get; private set; }
+        protected TaskManagerContext _context { get; private set; }
         public T Data { get; set; }
 
         protected BusinessBase(TaskManagerContext context)
@@ -24,9 +24,9 @@ namespace TaskManager.Persistence.Business.Abstract
 
         public virtual async Task<BaseResponse> Load(Guid Id) { throw new NotImplementedException(); }
 
-        public virtual async Task<BaseResponse> Insert() { throw new NotImplementedException(); }
+        public virtual async Task<BaseResponse> Insert(T item) { throw new NotImplementedException(); }
 
-        public virtual async Task<BaseResponse> Update() { throw new NotImplementedException(); }
+        public virtual async Task<BaseResponse> Update(T item) { throw new NotImplementedException(); }
 
         public virtual async Task<BaseResponse> Delete(Guid? Id) { throw new NotImplementedException(); }
 

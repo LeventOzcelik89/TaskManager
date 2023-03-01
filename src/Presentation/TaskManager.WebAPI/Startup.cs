@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,12 +29,26 @@ namespace TaskManager.WebAPI
             services.AddPersistenceServices(Configuration);
             services.AddInfrastructureServices();
 
-            services.AddControllers().AddNewtonsoftJson();
-            //    .AddJsonOptions(options =>
-            //    {
-            //        //  options.JsonSerializerOptions.Converters.Add(new GeometryJsonConverter());
-            //    });
-            //
+            services
+                .AddControllers()
+                .AddNewtonsoftJson(opts =>
+                {
+                    opts.SerializerSettings.Converters.Add(new GeometryJsonConverter());
+                    opts.SerializerSettings.Converters.Add(new FeatureJsonConverter());
+                    opts.SerializerSettings.Converters.Add(new FeatureCollectionJsonConverter());
+                    opts.SerializerSettings.Converters.Add(new EnvelopeJsonConverter());
+                });
+
+            //  services.AddAutoMapper(typeof(Startup));
+
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new ShUserProfile());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
 
             services.AddSwaggerGen(c =>
             {

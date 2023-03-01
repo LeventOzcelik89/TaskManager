@@ -10,37 +10,37 @@ using TaskManager.Persistence.Context;
 
 namespace TaskManager.Persistence.Business
 {
-    public class ShUserModel : BusinessBase<ShUser>
+    public class ShUserModel : ShUser
     {
-        
-        public ShUserModel(TaskManagerContext context) : base(context) { }
+        private TaskManagerContext _context;
+        public ShUserModel(TaskManagerContext context) => _context = context;  //   : base(context) { }
 
         //public UtTown Town { get; set; }
         //public UtCity City { get; set; }
 
-        public override async Task<BaseResponse> Delete(Guid? Id)
+        public async Task<BaseResponse> Delete(Guid? Id)
         {
-            _context.ShUsers.Remove(new ShUser { Id = Id.HasValue ? Id.Value : this.Data.Id });
+            _context.ShUsers.Remove(new ShUser { Id = Id.HasValue ? Id.Value : this.Id });
             var res = await _context.SaveChangesAsync();
             return new BaseResponse { Success = res > 0 };
         }
 
-        public override async Task<BaseResponse> Load(Guid Id)
+        public async Task<BaseResponse> Load(Guid Id)
         {
-            this.Data = await _context.ShUsers.Where(a => a.Id == Id).FirstOrDefaultAsync();
-            return new BaseResponse { Success = this.Data != null };
+            var res = await _context.ShUsers.Where(a => a.Id == Id).FirstOrDefaultAsync();
+            return new BaseResponse { Success = res != null };
         }
 
-        public override async Task<BaseResponse> Insert()
+        public async Task<BaseResponse> Insert(ShUser item)
         {
-            await _context.ShUsers.AddAsync(this.Data);
+            await _context.ShUsers.AddAsync(item);
             var res = await _context.SaveChangesAsync();
             return new BaseResponse { Success = res > 0 };
         }
 
-        public override async Task<BaseResponse> Update()
+        public async Task<BaseResponse> Update(ShUser item)
         {
-            _context.ShUsers.Update(this.Data);
+            _context.ShUsers.Update(item);
             var res = await _context.SaveChangesAsync();
             return new BaseResponse { Success = res > 0 };
         }
