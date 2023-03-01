@@ -10,35 +10,35 @@ using TaskManager.Persistence.Context;
 
 namespace TaskManager.Persistence.Business
 {
-    public class ShUserModel : ShUser
+    public class ShUserModel : BusinessBase<ShUser>
     {
-        private TaskManagerContext _context;
-        public ShUserModel(TaskManagerContext context) => _context = context;  //   : base(context) { }
+        
+        public ShUserModel(TaskManagerContext context) : base(context) { }
 
         //public UtTown Town { get; set; }
         //public UtCity City { get; set; }
 
-        public async Task<BaseResponse> Delete(Guid? Id)
+        public override async Task<BaseResponse> Delete(Guid? Id)
         {
-            _context.ShUsers.Remove(new ShUser { Id = Id.HasValue ? Id.Value : this.Id });
+            _context.ShUsers.Remove(new ShUser { Id = Id.HasValue ? Id.Value : this.Data.Id });
             var res = await _context.SaveChangesAsync();
             return new BaseResponse { Success = res > 0 };
         }
 
-        public async Task<BaseResponse> Load(Guid Id)
+        public override async Task<BaseResponse> Load(Guid Id)
         {
-            var res = await _context.ShUsers.Where(a => a.Id == Id).FirstOrDefaultAsync();
-            return new BaseResponse { Success = res != null };
+            this.Data = await _context.ShUsers.Where(a => a.Id == Id).FirstOrDefaultAsync();
+            return new BaseResponse { Success = this.Data != null };
         }
 
-        public async Task<BaseResponse> Insert(ShUser item)
+        public override async Task<BaseResponse> Insert(ShUser item)
         {
             await _context.ShUsers.AddAsync(item);
             var res = await _context.SaveChangesAsync();
             return new BaseResponse { Success = res > 0 };
         }
 
-        public async Task<BaseResponse> Update(ShUser item)
+        public override async Task<BaseResponse> Update(ShUser item)
         {
             _context.ShUsers.Update(item);
             var res = await _context.SaveChangesAsync();

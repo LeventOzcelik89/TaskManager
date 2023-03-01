@@ -14,15 +14,20 @@ namespace TaskManager.Persistence
     {
         public ShUserProfile()
         {
-            CreateMap<ShUser, ShUserModel>()
-                .ReverseMap();
+            //  CreateMap<ShUser, ShUserModel>()
+            //      .ReverseMap();
 
-            CreateMap<ShUserDTO, ShUserModel>()
-                .ReverseMap();
+            //  CreateMap<ShUserDTO, ShUserModel>(MemberList.Destination);
+
+            //  CreateMap<ShUserDTO, ShUserModel>()
+            //      .ForPath(destination => destination.Data, member => member.MapFrom(source => source))
+            //      .ReverseMap();
 
             CreateMap<ShUserDTO, ShUser>()
                 .ReverseMap();
-            
+
+
+
         }
     }
 }

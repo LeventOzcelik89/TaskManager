@@ -280,3 +280,4 @@ src/WebUI/ClientApp/package-lock.json
 /src/Presentation/TaskManager.WebAPI/obj/TaskManager.WebAPI.csproj.nuget.dgspec.json
 /src/Presentation/TaskManager.WebAPI/obj/project.nuget.cache
 /src/Presentation/TaskManager.WebAPI/obj/project.assets.json
+/src/Core/TaskManager.Application/obj/Debug/net7.0/TaskManager.Application.csproj.AssemblyReference.cache
