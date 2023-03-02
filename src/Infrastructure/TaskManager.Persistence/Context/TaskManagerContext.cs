@@ -51,6 +51,7 @@ public partial class TaskManagerContext : DbContext
             entity.Property(e => e.IdentityNumber)
                 .IsRequired()
                 .HasMaxLength(11);
+            entity.Property(e => e.IsBlocked).HasComment("Kullanıcı bloklu mu değil mi kontrolü için.");
             entity.Property(e => e.LastName)
                 .IsRequired()
                 .HasMaxLength(100);

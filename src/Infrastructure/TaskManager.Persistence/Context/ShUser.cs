@@ -33,6 +33,9 @@ public partial class ShUser
 
     public Guid CityId { get; set; }
 
+    /// <summary>
+    /// Kullanıcı bloklu mu değil mi kontrolü için.
+    /// </summary>
     public bool? IsBlocked { get; set; }
 
     public virtual UtCity City { get; set; }
