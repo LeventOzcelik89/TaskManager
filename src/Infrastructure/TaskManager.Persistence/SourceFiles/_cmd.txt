@@ -1,1 +1,3 @@
-﻿dotnet ef dbcontext scaffold "Server=.;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -p D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence -f --no-build -o Context
+﻿dotnet ef dbcontext scaffold "Server=.;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -p D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence --no-build -o Context -d -f
+
+dotnet ef dbcontext scaffold "Server=.;Database=TaskManager;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -p D:\Projects\TaskManager\TaskManager\src\Infrastructure\TaskManager.Persistence --no-build -o Context -c TaskManagerContext --context-dir Contexts -f
