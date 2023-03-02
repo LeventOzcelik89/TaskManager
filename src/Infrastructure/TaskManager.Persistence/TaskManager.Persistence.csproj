@@ -33,4 +33,8 @@
     <ProjectReference Include="..\..\Core\TaskManager.Domain\TaskManager.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Context\" />
+  </ItemGroup>
+
 </Project>
