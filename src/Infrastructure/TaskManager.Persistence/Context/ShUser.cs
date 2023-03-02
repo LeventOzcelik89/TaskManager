@@ -35,7 +35,7 @@ public partial class ShUser
 
     public bool? IsBlocked { get; set; }
 
-    public virtual UtTown City { get; set; }
+    public virtual UtCity City { get; set; }
 
     public virtual UtTown Town { get; set; }
 }

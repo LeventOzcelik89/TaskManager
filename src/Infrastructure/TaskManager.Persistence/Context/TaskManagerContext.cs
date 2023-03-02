@@ -58,12 +58,12 @@ public partial class TaskManagerContext : DbContext
                 .IsRequired()
                 .HasMaxLength(250);
 
-            entity.HasOne(d => d.City).WithMany(p => p.ShUserCities)
+            entity.HasOne(d => d.City).WithMany(p => p.ShUsers)
                 .HasForeignKey(d => d.CityId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK___SH_User_CityId___UT_City_Id");
 
-            entity.HasOne(d => d.Town).WithMany(p => p.ShUserTowns)
+            entity.HasOne(d => d.Town).WithMany(p => p.ShUsers)
                 .HasForeignKey(d => d.TownId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK___SH_User_TownId___UT_Town_Id");
@@ -108,7 +108,7 @@ public partial class TaskManagerContext : DbContext
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Shape).HasColumnType("geometry");
 
-            entity.HasOne(d => d.City).WithMany(p => p.InverseCity)
+            entity.HasOne(d => d.City).WithMany(p => p.UtTowns)
                 .HasForeignKey(d => d.CityId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK___UT_Town_CityId___UT_City_Id");

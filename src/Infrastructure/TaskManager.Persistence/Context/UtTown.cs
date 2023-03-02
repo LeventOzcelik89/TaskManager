@@ -22,11 +22,7 @@ public partial class UtTown
 
     public Guid CityId { get; set; }
 
-    public virtual UtTown City { get; set; }
+    public virtual UtCity City { get; set; }
 
-    public virtual ICollection<UtTown> InverseCity { get; } = new List<UtTown>();
-
-    public virtual ICollection<ShUser> ShUserCities { get; } = new List<ShUser>();
-
-    public virtual ICollection<ShUser> ShUserTowns { get; } = new List<ShUser>();
+    public virtual ICollection<ShUser> ShUsers { get; } = new List<ShUser>();
 }

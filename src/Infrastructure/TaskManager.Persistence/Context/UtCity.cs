@@ -21,4 +21,8 @@ public partial class UtCity
     public Geometry Shape { get; set; }
 
     public string PlateNumber { get; set; }
+
+    public virtual ICollection<ShUser> ShUsers { get; } = new List<ShUser>();
+
+    public virtual ICollection<UtTown> UtTowns { get; } = new List<UtTown>();
 }
